@@ -17,6 +17,14 @@ class Home extends React.Component {
           <div id='Skill_Frame'>
           </div>
         </div>
+        <div id='Social_Frame'>
+          <div id='Social_InstaAFrame'>
+          </div>
+          <div id='Social_YoutubeFrame'>
+          </div>
+          <div id='Social_InstaUFrame'>
+          </div>
+        </div>
       </React.Fragment>
     );
   }
