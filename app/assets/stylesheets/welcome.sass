@@ -1,0 +1,107 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Rajdhani')
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One')
+
+$fontPrincipal: 'Rajdhani'
+$fontCTA: 'Fugaz One'
+
+body
+    margin: 0
+
+#Nav_Frame
+    display: flex
+    justify-content: space-between
+    padding: 15px 0
+    position: fixed
+    width: 100%
+
+    #Nav_Logo
+        display: flex
+        margin: auto 10px
+    
+        .Nav_TxtLogo
+            color: white
+            font-family: $fontPrincipal
+            font-size: 32px
+            margin: auto
+        
+        #Nav_ImgLogo
+            width: 30px
+            height: 30px
+    
+    #Nav_CategoryFrame
+        display: flex
+
+        .Nav_Categories
+            color: white
+            font-family: $fontPrincipal
+            font-size: 19px
+            margin: auto 20px
+            border-radius: 2px
+            cursor: pointer
+            &:hover
+                text-decoration: underline
+
+        #Nav_CTA
+            background-color: #EC7500
+            color: white
+            padding: 5px 10px
+            font-size: 17px
+            font-family: $fontCTA
+
+
+#Home_Background
+    background-image: url("/home_background.jpg")
+    background-position: center
+    background-size: cover
+    width: 100vw
+    height: 100vh
+    display: flex
+
+    #Home_Frame
+        margin: auto
+        font-family: $fontPrincipal
+        display: flex
+        flex-direction: column
+    #Home_Baseline
+        margin: 0 auto
+        color: white
+        font-size: 28px
+
+    #Home_Description
+        margin: 5px auto auto auto 
+        color: white
+        font-size: 12px
+
+    #Home_CTAFrame
+        margin: 30px auto auto auto
+        position: relative
+        width: 100vw
+        
+        #Home_CTA
+            color: white
+            font-size: 20px
+            padding: 10px 20px
+            border-radius: 2px
+            background-color: #EC7500
+            font-family: $fontCTA
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            cursor: pointer
+            &:hover
+                top: -5px
+                left: calc(50% - 5px)
+                border-radius: 0.5px
+                box-shadow: 3px 5px 0px 2px white
+
+
+#Skill_Background
+    background-image: url("/skill_background.png")
+    background-position: center
+    background-size: cover
+    width: 100vw
+    height: 100vh
+    display: flex
