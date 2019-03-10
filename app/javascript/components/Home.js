@@ -18,11 +18,28 @@ class Home extends React.Component {
           </div>
         </div>
         <div id='Social_Frame'>
+          <div id='Social_NameBackground'>
+            <div className='Social_InstaName'></div>
+            <div className='Social_InstaName'></div>
+            <div className='Social_InstaName'></div>
+          </div>
           <div id='Social_InstaAFrame'>
+            <div className='Social_NameFrame'>            
+              <img className='Social_NameLogo' src="/instagram_logo.png" alt="Instagram Logo"/>
+              <div className='Social_NameTxt'>alicehrmtte</div>
+            </div>
           </div>
           <div id='Social_YoutubeFrame'>
+            <div className='Social_NameFrame'>      
+              <img className='Social_NameLogo' src="/youtube_logo.png" alt="Youtube Logo"/>
+              <div className='Social_NameTxt'>KefCes</div>
+            </div>
           </div>
           <div id='Social_InstaUFrame'>
+            <div className='Social_NameFrame'>       
+              <img className='Social_NameLogo' src="/instagram_logo.png" alt="Instagram Logo"/>
+              <div className='Social_NameTxt'>ugo.nicolai</div>
+            </div>
           </div>
         </div>
       </React.Fragment>
