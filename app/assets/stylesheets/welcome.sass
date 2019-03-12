@@ -16,6 +16,8 @@ body
     padding: 15px 0
     position: fixed
     width: 100%
+    z-index: 5
+    background-color: rgba(0, 0, 0, 0.2)
 
     #Nav_Logo
         display: flex
@@ -53,12 +55,25 @@ body
 
 
 #Home_Background
-    background-image: url("/home_background.jpg")
+    background-image: url("/background_ua.jpg")
     background-position: center
     background-size: cover
     width: 100vw
-    height: 100vh
+    height: 95vh
     display: flex
+
+    .Home_KefCes
+        position: absolute
+        width: 580px
+        height: 580px
+        bottom: 5vh
+
+    #Home_Ugo
+        left: 0px
+
+    #Home_Alice
+        right: -50px
+        
 
     #Home_Frame
         margin: auto
@@ -98,19 +113,58 @@ body
                 box-shadow: 3px 5px 0px 2px white
 
 
-#Skill_Background
-    background-image: url("/skill_background.png")
-    background-position: center
+#About_Background
+    background-image: url("/home_background.jpg")
+    background-position: top
     background-size: cover
     width: 100vw
-    height: 100vh
+    height: 95vh
     display: flex
 
+    #About_Frame
+        margin: auto 30px auto auto
+        width: 50%
+        background-color: rgba(0, 0, 0, 0.3)
+        padding: 30px
+
+        #About_Title
+            font-family: $fontCTA
+            font-size: 35px
+            color: white
+            text-align: center
+            margin-bottom: 20px
+        
+        #About_Txt
+            font-family: $fontPrincipal
+            font-size: 18px
+            color: white
+            white-space: pre-wrap
+
+        #About_Line
+            margin: 20px auto
+            width: 50%
+            border-bottom: 1px solid white
+
+        #About_DescriptionFrame
+            display: flex
+
+            .About_DescriptionBlock
+
+                .About_DescriptionTitle
+                    font-family: $fontCTA
+                    font-size: 23px
+                    color: white
+                    text-align: center
+                    margin-bottom: 20px
+
+                .About_DescriptionTxt
+                    font-family: $fontPrincipal
+                    font-size: 17px
+                    color: white
+                    white-space: pre-wrap
 
 #Social_Frame
-    border: 1px solid red
     width: 100vw
-    height: 25vw
     display: flex
     position: relative
 
@@ -124,16 +178,16 @@ body
         z-index: -1
 
     #Social_InstaAFrame
-        border: 1px solid blue
-        width: 33.3vw
+        width: 33.3333333vw
+        height: 33.3333333vw
 
     #Social_YoutubeFrame
-        border: 1px solid blue
-        width: 33.3vw
+        width: 33.3333333vw
+        height: 33.3333333vw
 
     #Social_InstaUFrame
-        border: 1px solid blue
-        width: 33.3vw
+        width: 33.3333333vw
+        height: 33.3333333vw
 
     .Social_NameFrame
         display: flex
@@ -149,3 +203,42 @@ body
             font-family: $fontPrincipal
             font-size: 28px
             margin: auto auto auto 5px
+
+    .Social_PicturesFrame
+        margin: auto
+        display: flex
+        border: 1px solid red
+
+        .Social_Pictures
+            margin: auto
+            width: 33%
+            height: 33%
+            box-shadow: 0 10px 6px -6px
+            // position: relative
+            // &:before, &:after
+            //     z-index: -1
+            //     position: absolute
+            //     content: ""
+            //     bottom: 15px
+            //     left: 10px
+            //     width: 50%
+            //     top: 80%
+            //     max-width: 300px
+            //     background: #777
+            //     -webkit-box-shadow: 0 15px 10px #777
+            //     -moz-box-shadow: 0 15px 10px #777
+            //     box-shadow: 0 15px 10px #777
+            //     -webkit-transform: rotate(-3deg)
+            //     -moz-transform: rotate(-3deg)
+            //     -o-transform: rotate(-3deg)
+            //     -ms-transform: rotate(-3deg)
+            //     transform: rotate(-3deg)
+            // &:after
+            //     -webkit-transform: rotate(3deg)
+            //     -moz-transform: rotate(3deg)
+            //     -o-transform: rotate(3deg)
+            //     -ms-transform: rotate(3deg)
+            //     transform: rotate(3deg)
+            //     right: 10px
+            //     left: auto
+            
