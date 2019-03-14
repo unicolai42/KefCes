@@ -48,9 +48,14 @@ class Home extends React.Component {
               <div className='Social_NameTxt'>alicehrmtte</div>
             </div>
             <div className='Social_PicturesFrame'>
-              <img className='Social_Pictures' src="/instaa1.jpg" alt="picture instagram"/>
-              <img className='Social_Pictures' src="/instaa2.jpg" alt="picture instagram"/>
-              <img className='Social_Pictures' src="/instaa3.jpg" alt="picture instagram"/>
+              <div className='Social_PicturesBlock'>
+                <img className='Social_Pictures' src="/instaa1.jpg" alt="picture instagram"/>
+                <img className='Social_Pictures Social_PicturesRight' src="/instaa2.jpg" alt="picture instagram"/>
+              </div>
+              <div className='Social_PicturesBlock Social_PicturesBlockBottom'>
+                <img className='Social_Pictures' src="/instaa3.jpg" alt="picture instagram"/>
+                <img className='Social_Pictures Social_PicturesRight' src="/instaa4.jpg" alt="picture instagram"/>
+              </div>
             </div>
           </div>
           <div id='Social_YoutubeFrame'>
@@ -58,6 +63,8 @@ class Home extends React.Component {
               <img className='Social_NameLogo' src="/youtube_logo.png" alt="Youtube Logo"/>
               <div className='Social_NameTxt'>KefCes</div>
             </div>
+            <img id='Social_YoutubePicture' src="/youtubeminiature.png" alt=""/>
+            <img id='Social_YoutubePlayButton' src="/playButton.png" alt=""/>
           </div>
           <div id='Social_InstaUFrame'>
             <div className='Social_NameFrame'>       
@@ -65,9 +72,14 @@ class Home extends React.Component {
               <div className='Social_NameTxt'>ugo.nicolai</div>
             </div>
             <div className='Social_PicturesFrame'>
-              <img className='Social_Pictures' src="/instau1.jpg" alt="picture instagram"/>
-              <img className='Social_Pictures' src="/instau2.jpg" alt="picture instagram"/>
-              <img className='Social_Pictures' src="/instau3.png" alt="picture instagram"/>
+              <div className='Social_PicturesBlock'>
+                <img className='Social_Pictures' src="/instau1.jpg" alt="picture instagram"/>
+                <img className='Social_Pictures Social_PicturesRight' src="/instau2.jpg" alt="picture instagram"/>
+              </div>
+              <div className='Social_PicturesBlock Social_PicturesBlockBottom'>
+                <img className='Social_Pictures' src="/instau3.png" alt="picture instagram"/>
+                <img className='Social_Pictures Social_PicturesRight' src="/instau4.png" alt="picture instagram"/>
+              </div>
             </div>
           </div>
         </div>
