@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import url('https://fonts.googleapis.com/css?family=Rajdhani')
 @import url('https://fonts.googleapis.com/css?family=Fugaz+One')
+@import url('https://fonts.googleapis.com/css?family=Roboto:300')
 
 $fontPrincipal: 'Rajdhani'
 $fontCTA: 'Fugaz One'
@@ -177,8 +178,54 @@ body
         width: 100vw
         z-index: -1
 
-    #Social_InstaAFrame
-        width: 27vw
+    .Social_FrameBackground
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, 0.8)
+        z-index: 2
+        flex-direction: column
+        cursor: pointer
+
+        #Social_SubscribeFrame
+            display: flex
+            flex-direction: column
+            margin: auto
+
+            #Social_SubscribeInfo
+                display: flex
+                margin-bottom: 40px
+
+            #Social_SubscribePicture
+                border-radius: 50%
+                width: 140px
+                height: 140px
+                margin-right: 50px
+
+            #Social_SubscribeTxt
+                display: flex
+                flex-direction: column
+
+                #Social_SubscribeTitle
+                    font-size: 28px
+                    color: white
+                    margin: auto auto 2px 0
+                    font-family: $fontPrincipal
+                
+                #Social_SubscribeSubscribersNumber
+                    font-size: 20px
+                    color: white
+                    margin: 2px auto auto auto
+                    font-family: $fontPrincipal
+        
+        #Social_SubscribeButton
+            background-color: rgb(255, 0, 0)
+            color: white
+            margin: 0 auto
+            font-family: $fontPrincipal
+            font-size: 20px
+            padding: 10px 14px
+            border-radius: 3px
 
     #Social_YoutubeFrame
         width: 44.8vw
@@ -193,13 +240,18 @@ body
         #Social_YoutubePlayButton
             width: 25%
             position: absolute
-            z-index: 2
+            z-index: 1
             top: 50%
             left: 50%
             transform: translateX(-50%)
 
+    #Social_InstaAFrame
+        width: 27vw
+        position: relative
+
     #Social_InstaUFrame
         width: 27vw
+        position: relative
 
     .Social_NameFrame
         display: flex

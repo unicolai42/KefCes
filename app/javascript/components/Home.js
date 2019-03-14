@@ -2,6 +2,42 @@ import React from "react"
 
 
 class Home extends React.Component {
+  state = {
+    instaAliceBackground: 'none',
+    youtubeBackground: 'none',
+    instaUgoBackground: 'none'
+  }
+
+  displayBackgroundInstaAlice = () => {
+    console.log('ok')
+    this.setState({instaAliceBackground: 'flex'})
+  }
+
+  displayBackgroundYoutube = () => {
+    console.log('ok')
+    this.setState({youtubeBackground: 'flex'})
+  }
+
+  displayBackgroundInstaUgo = () => {
+    console.log('ok')
+    this.setState({instaUgoBackground: 'flex'})
+  }
+
+  hideBackgroundInstaAlice = () => {
+    console.log('ok')
+    this.setState({instaAliceBackground: 'none'})
+  }
+
+  hideBackgroundYoutube = () => {
+    console.log('ok')
+    this.setState({youtubeBackground: 'none'})
+  }
+
+  hideBackgroundInstaUgo = () => {
+    console.log('ok')
+    this.setState({instaUgoBackground: 'none'})
+  }
+
   render () {
     return (
       <React.Fragment>
@@ -42,7 +78,10 @@ class Home extends React.Component {
             <div className='Social_InstaName'></div>
             <div className='Social_InstaName'></div>
           </div>
-          <div id='Social_InstaAFrame'>
+          <div id='Social_InstaAFrame' onMouseEnter={this.displayBackgroundInstaAlice}>
+            <div className='Social_FrameBackground' style={{display: this.state.instaAliceBackground}} onMouseLeave={this.hideBackgroundInstaAlice} onClick={(e) => {}}>
+
+            </div>
             <div className='Social_NameFrame'>            
               <img className='Social_NameLogo' src="/instagram_logo.png" alt="Instagram Logo"/>
               <div className='Social_NameTxt'>alicehrmtte</div>
@@ -58,7 +97,19 @@ class Home extends React.Component {
               </div>
             </div>
           </div>
-          <div id='Social_YoutubeFrame'>
+          <div id='Social_YoutubeFrame' onMouseEnter={this.displayBackgroundYoutube}>
+            <div className='Social_FrameBackground' style={{display: this.state.youtubeBackground}} onMouseLeave={this.hideBackgroundYoutube} onClick={(e) => {}}>
+              <div id='Social_SubscribeFrame'>
+                <div id='Social_SubscribeInfo'>
+                  <img id='Social_SubscribePicture' src="/kefcesYoutube.png" alt=""/>
+                  <div id='Social_SubscribeTxt'>
+                    <div id='Social_SubscribeTitle'>KefCes</div>
+                    <div id='Social_SubscribeSubscribersNumber'>81 subscribers</div>
+                  </div>
+                </div>
+                <div id='Social_SubscribeButton'>OUR CHANNEL</div>
+              </div>
+            </div>            
             <div className='Social_NameFrame'>      
               <img className='Social_NameLogo' src="/youtube_logo.png" alt="Youtube Logo"/>
               <div className='Social_NameTxt'>KefCes</div>
@@ -66,7 +117,10 @@ class Home extends React.Component {
             <img id='Social_YoutubePicture' src="/youtubeminiature.png" alt=""/>
             <img id='Social_YoutubePlayButton' src="/playButton.png" alt=""/>
           </div>
-          <div id='Social_InstaUFrame'>
+          <div id='Social_InstaUFrame' onMouseEnter={this.displayBackgroundInstaUgo}>
+            <div className='Social_FrameBackground' style={{display: this.state.instaUgoBackground}} onMouseLeave={this.hideBackgroundInstaUgo} onClick={(e) => {}}>
+
+            </div>
             <div className='Social_NameFrame'>       
               <img className='Social_NameLogo' src="/instagram_logo.png" alt="Instagram Logo"/>
               <div className='Social_NameTxt'>ugo.nicolai</div>
