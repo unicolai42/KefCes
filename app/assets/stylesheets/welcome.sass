@@ -166,17 +166,9 @@ body
                     white-space: pre-wrap
 
 #Social_Frame
-    width: 100vw
+    width: calc(100vw - 40px)
     display: flex
-
-    #Social_NameBackground
-        // background-image: url("/glitch_effect.jpeg")
-        // background-position: center top
-        // background-size: cover
-        position: absolute
-        height: 5.5vw
-        width: 100vw
-        z-index: -1
+    margin: 0 auto
 
     .Social_FrameBackground
         position: absolute
@@ -232,6 +224,7 @@ body
         display: flex
         flex-direction: column
         position: relative
+        padding-bottom: 20px
 
         #Social_YoutubePicture
             width: 95%
@@ -256,6 +249,7 @@ body
     .Social_NameFrame
         display: flex
         height: 5.5vw
+        padding: 10px 0
 
         .Social_NameLogo
             width: 50px
@@ -274,6 +268,7 @@ body
 
         .Social_PicturesBlockBottom
             margin-top: 4%
+            padding-bottom: 20px
 
         .Social_PicturesBlock
             display: flex
