@@ -52,6 +52,9 @@ class Home extends React.Component {
                 </div>
             </div>
         </div>
+        <div id='Portofolio_Background'>
+          
+        </div>
         <div id='About_Background'>
         {/* <video width="1000" height="1000" autoPlay muted loop onEnded={() => { console.log('Ended Video') }}>
           <source src="/code.mov" type="video/mp4"/>
@@ -79,9 +82,20 @@ class Home extends React.Component {
             <div className='Social_InstaName'></div>
           </div>
           <div id='Social_InstaAFrame' onMouseEnter={this.displayBackgroundInstaAlice}>
-            <div className='Social_FrameBackground' style={{display: this.state.instaAliceBackground}} onMouseLeave={this.hideBackgroundInstaAlice} onClick={(e) => {}}>
-
-            </div>
+            <a href='https://www.instagram.com/alicehrmtte/' className='Social_FrameBackground' id='Social_FrameBackgroundLeft' style={{display: this.state.instaAliceBackground}} onMouseLeave={this.hideBackgroundInstaAlice} onClick={(e) => {}}>
+              <div id='Social_SubscribeFrame'>
+                <img className='Social_SubscribePictureInsta' src="/kefcesInstaa.jpg" alt=""/>
+                <div className='Social_SubscribeInfoInsta'>
+                  <div className='Social_SubscribeName'>alicehrmtte</div>
+                  <div className='Social_SubscribeButtonInsta'>Follow</div>
+                </div>
+                <div className='Social_SubscribeInfoInsta'>
+                  <div className='Social_SubscribeInfoFollow'>12 posts</div>
+                  <div className='Social_SubscribeInfoFollow'>179 followers</div>
+                  <div className='Social_SubscribeInfoFollow'>131 following</div>
+                </div>
+              </div>
+            </a>
             <div className='Social_NameFrame'>            
               <img className='Social_NameLogo' src="/instagram_logo.png" alt="Instagram Logo"/>
               <div className='Social_NameTxt'>alicehrmtte</div>
@@ -98,18 +112,18 @@ class Home extends React.Component {
             </div>
           </div>
           <div id='Social_YoutubeFrame' onMouseEnter={this.displayBackgroundYoutube}>
-            <div className='Social_FrameBackground' style={{display: this.state.youtubeBackground}} onMouseLeave={this.hideBackgroundYoutube} onClick={(e) => {}}>
+            <a href='https://www.youtube.com/channel/UCkbf7YsXr5GVT-aKWDEv-Gw' className='Social_FrameBackground' style={{display: this.state.youtubeBackground}} onMouseLeave={this.hideBackgroundYoutube} onClick={(e) => {}}>
               <div id='Social_SubscribeFrame'>
-                <div id='Social_SubscribeInfo'>
-                  <img id='Social_SubscribePicture' src="/kefcesYoutube.png" alt=""/>
+                <div id='Social_SubscribeInfoYoutube'>
+                  <img id='Social_SubscribePictureYoutube' src="/kefcesYoutube.png" alt=""/>
                   <div id='Social_SubscribeTxt'>
                     <div id='Social_SubscribeTitle'>KefCes</div>
                     <div id='Social_SubscribeSubscribersNumber'>81 subscribers</div>
                   </div>
                 </div>
-                <div id='Social_SubscribeButton'>OUR CHANNEL</div>
+                <div id='Social_SubscribeButtonYoutube'>SUBSCRIBE</div>
               </div>
-            </div>            
+            </a>            
             <div className='Social_NameFrame'>      
               <img className='Social_NameLogo' src="/youtube_logo.png" alt="Youtube Logo"/>
               <div className='Social_NameTxt'>KefCes</div>
@@ -118,9 +132,20 @@ class Home extends React.Component {
             <img id='Social_YoutubePlayButton' src="/playButton.png" alt=""/>
           </div>
           <div id='Social_InstaUFrame' onMouseEnter={this.displayBackgroundInstaUgo}>
-            <div className='Social_FrameBackground' style={{display: this.state.instaUgoBackground}} onMouseLeave={this.hideBackgroundInstaUgo} onClick={(e) => {}}>
-
-            </div>
+            <a href='https://www.instagram.com/ugo.nicolai/' className='Social_FrameBackground' id='Social_FrameBackgroundRight' style={{display: this.state.instaUgoBackground}} onMouseLeave={this.hideBackgroundInstaUgo} onClick={(e) => {}}>
+              <div id='Social_SubscribeFrame'>
+                <img className='Social_SubscribePictureInsta' src="/kefcesInstau.jpg" alt=""/>
+                <div className='Social_SubscribeInfoInsta'>
+                  <div className='Social_SubscribeName'>ugo.nicolai</div>
+                  <div className='Social_SubscribeButtonInsta'>Follow</div>
+                </div>
+                <div className='Social_SubscribeInfoInsta'>
+                  <div className='Social_SubscribeInfoFollow'>37 posts</div>
+                  <div className='Social_SubscribeInfoFollow'>236 followers</div>
+                  <div className='Social_SubscribeInfoFollow'>68 following</div>
+                </div>
+              </div>
+            </a>
             <div className='Social_NameFrame'>       
               <img className='Social_NameLogo' src="/instagram_logo.png" alt="Instagram Logo"/>
               <div className='Social_NameTxt'>ugo.nicolai</div>
