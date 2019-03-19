@@ -2,10 +2,46 @@ import React from "react"
 
 
 class Home extends React.Component {
+
+  constructor(props) {
+    super(props);
+    // create a ref to store the textInput DOM element
+    this.videoAlice = React.createRef()
+    this.videoUgo = React.createRef()
+  }
+
   state = {
     instaAliceBackground: 'none',
     youtubeBackground: 'none',
     instaUgoBackground: 'none'
+  }
+
+  componentDidMount() {
+    // console.log(this.videoAlice, '1')
+    // console.log(this.videoAlice.current, '2')
+    setTimeout(()=> { this.videoAlice.current.play() }, 1000)
+    setTimeout(()=> { this.videoUgo.current.play() }, 1013)
+
+  }
+
+  displayUgoProfile = () => {
+    console.log('ok')
+    this.setState({profileUgo: 'flex'})
+  }
+
+  hideUgoProfile = () => {
+    console.log('ok')
+    this.setState({profileUgo: 'none'})
+  }
+
+  displayAliceProfile = () => {
+    console.log('ok')
+    this.setState({profileAlice: 'flex'})
+  }
+
+  hideAliceProfile = () => {
+    console.log('ok')
+    this.setState({profileAlice: 'none'})
   }
 
   displayBackgroundInstaAlice = () => {
@@ -42,9 +78,12 @@ class Home extends React.Component {
     return (
       <React.Fragment>
         <div id='Home_Background'>
-          <div id='Home_Filter'></div>
-          <img className='Home_KefCes' id='Home_Ugo' src="/ugo.png" alt="growth profile"/>
-          <img className='Home_KefCes' id='Home_Alice' src="/alice_home.gif" alt="storytelling profile"/>
+          <video ref={this.videoUgo} className='Home_KefCes' id='Home_Ugo' muted loop>
+            <source src="/ugo_home.mp4" type="video/mp4"/>
+          </video>
+          <video ref={this.videoAlice} className='Home_KefCes' id='Home_Alice' muted loop>
+            <source src="/alice_home.mp4" type="video/mp4"/>
+          </video>
           <div id='Home_Frame'>
               <div id='Home_Baseline'>SCALE YOUR PROJECT</div>
               <div id='Home_Description'>StoryTelling, Editing, Video, Photo, Design, Growth Hacking, Website, Automation.</div>
@@ -54,13 +93,26 @@ class Home extends React.Component {
           </div>
         </div>
         <div id='Portofolio_Background'>
-          <div id='Portofolio_FrameUgo'></div>
-          <div id='Portofolio_FrameAlice'></div>
+          <div id='Portofolio_FrameUgo' onMouseEnter={this.displayUgoProfile}>
+            <a href='https://www.instagram.com/alicehrmtte/' className='Portofolio_FrameBackground' id='Portofolio_FrameBackgroundLeft' style={{display: this.state.instaAliceBackground}} onMouseLeave={this.hideBackgroundInstaAlice} onClick={(e) => {}}>
+              <div className='Portofolio_InfoFrame'>
+                <div className='Portofolio_AllSkills'>
+                  <div className='Portofolio_Skill'>Growth Hacking</div>
+                  <div className='Portofolio_Skill'>Website</div>
+                  <div className='Portofolio_Skill'>Scripts</div>
+                  <div className='Portofolio_Skill'></div>
+                </div>
+                <div className='Portofolio_About'>
+                    cecerc
+                </div>
+              </div>
+            </a>
+          </div>
+          <div id='Portofolio_FrameAlice' onMouseEnter={this.displayAliceProfile}>
+
+          </div>
         </div>
         <div id='About_Background'>
-        {/* <video width="1000" height="1000" autoPlay muted loop onEnded={() => { console.log('Ended Video') }}>
-          <source src="/code.mov" type="video/mp4"/>
-        </video> */}
           <div id='About_Frame'>
             <div id='About_Title'>MINDSET</div>
             <div id='About_Txt'>{mindsetTxt}</div>
