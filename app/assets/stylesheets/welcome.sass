@@ -129,16 +129,20 @@ body
     display: flex
     flex-direction: column
 
-    #Portofolio_FrameUgo
-        // border: 1px solid red
+    .Portofolio_Frame
         height: 50%
         width: 100% 
-        // background-color: rgba(0, 0, 0, 0.7)
+        position: relative
 
-    #Portofolio_FrameAlice
-        height: 50%
-        width: 100% 
-        background-color: rgba(0, 0, 0, 0.7)
+        .Portofolio_FrameBackground
+            position: absolute
+            width: 100%
+            height: 100%
+            background-color: rgba(0, 0, 0, 0.8)
+            z-index: 2
+            flex-direction: column
+            cursor: pointer
+            text-decoration: none
 
 
 #About_Background

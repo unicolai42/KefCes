@@ -11,6 +11,8 @@ class Home extends React.Component {
   }
 
   state = {
+    profileUgo: 'none',
+    profileAlice: 'none',
     instaAliceBackground: 'none',
     youtubeBackground: 'none',
     instaUgoBackground: 'none'
@@ -93,8 +95,8 @@ class Home extends React.Component {
           </div>
         </div>
         <div id='Portofolio_Background'>
-          <div id='Portofolio_FrameUgo' onMouseEnter={this.displayUgoProfile}>
-            <a href='https://www.instagram.com/alicehrmtte/' className='Portofolio_FrameBackground' id='Portofolio_FrameBackgroundLeft' style={{display: this.state.instaAliceBackground}} onMouseLeave={this.hideBackgroundInstaAlice} onClick={(e) => {}}>
+          <div className='Portofolio_Frame' onMouseEnter={this.displayUgoProfile}>
+            <a href='https://www.instagram.com/alicehrmtte/' className='Portofolio_FrameBackground' id='Portofolio_FrameBackgroundLeft' style={{display: this.state.profileUgo}} onMouseLeave={this.hideUgoProfile}>
               <div className='Portofolio_InfoFrame'>
                 <div className='Portofolio_AllSkills'>
                   <div className='Portofolio_Skill'>Growth Hacking</div>
@@ -108,8 +110,20 @@ class Home extends React.Component {
               </div>
             </a>
           </div>
-          <div id='Portofolio_FrameAlice' onMouseEnter={this.displayAliceProfile}>
-
+          <div className='Portofolio_Frame' onMouseEnter={this.displayAliceProfile}>
+            <a href='https://www.instagram.com/alicehrmtte/' className='Portofolio_FrameBackground' id='Portofolio_FrameBackgroundLeft' style={{display: this.state.profileAlice}} onMouseLeave={this.hideAliceProfile}>
+              <div className='Portofolio_InfoFrame'>
+                <div className='Portofolio_AllSkills'>
+                  <div className='Portofolio_Skill'>Growth Hacking</div>
+                  <div className='Portofolio_Skill'>Website</div>
+                  <div className='Portofolio_Skill'>Scripts</div>
+                  <div className='Portofolio_Skill'></div>
+                </div>
+                <div className='Portofolio_About'>
+                    cecerc
+                </div>
+              </div>
+            </a>
           </div>
         </div>
         <div id='About_Background'>
